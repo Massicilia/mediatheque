@@ -17,7 +17,7 @@ public:
 
 private:
     Ui::research *ui;
-    QSqlDatabase dbMeteo;
+    QSqlDatabase dbCatalogue;
 };
 
 #endif // RESEARCH_H
