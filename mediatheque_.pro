@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        research.cpp
+        research.cpp \
+    ../mediatheque/Media.cpp
 
 HEADERS += \
-        research.h
+        research.h \
+    ../mediatheque/Media.h
 
 FORMS += \
         research.ui
