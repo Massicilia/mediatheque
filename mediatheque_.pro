@@ -26,11 +26,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         research.cpp \
-    ../mediatheque/Media.cpp
+    ../mediatheque/Media.cpp \
+    ../mediatheque1/Media.cpp \
+    Media.cpp \
+    Livre.cpp \
+    CD.cpp \
+    DVD.cpp
 
 HEADERS += \
         research.h \
-    ../mediatheque/Media.h
+    ../mediatheque/Media.h \
+    ../mediatheque1/Media.h \
+    Media.h \
+    Livre.h \
+    DVD.h \
+    CD.h
+QT += sql
 
 FORMS += \
         research.ui
