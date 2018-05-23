@@ -1,13 +1,14 @@
-#ifndef dbCatalogue_H
+//#ifndef dbCatalogue_H
+#ifndef CD_H
 #define CD_H
-#include Media.h
+#include <Media.h>
 
 using namespace std;
 class CD : public Media
 {
 public:
 
-     CD(string artistePrincipal="", string studio="", string nbrMin="");
+     CD(string artistePrincipal="", string studio="", int nbrMin=0);
      CD(const CD&);
      string getArtistePrincipal();
      string getStudio();
@@ -19,4 +20,4 @@ protected:
     int _nbrMin;
 };
 
-#endif // dbCatalogue_H
+#endif // CD_H

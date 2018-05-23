@@ -1,15 +1,12 @@
-#ifndef CD_H
-#define CD_H
-#include Media.h
+#ifndef DVD_H
+#define DVD_H
+#include <Media.h>
 
 using namespace std;
-class CD : public Media
+class DVD : public Media
 {
-
-
 public:
-
-     DVD(string realisateur="", string studio="", string casting[]= [], int nbrMin="");
+     DVD(string realisateur="", string studio="", string casting[]= NULL, int nbrMin=0);
      DVD(const DVD&);
      string getRealisateur();
      string getStudio();
@@ -22,3 +19,5 @@ protected:
     string casting[];
     int _nbrMin;
 };
+
+#endif // DVD_H

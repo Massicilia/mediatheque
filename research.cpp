@@ -1,6 +1,7 @@
 #include "research.h"
 #include "ui_research.h"
-#include <QtSql>
+#include <QtSql/QSqlDatabase>
+
 research::research(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::research)
@@ -12,13 +13,14 @@ research::~research()
 {
     delete ui;
 }
+
 QSqlDatabase dbCatalogue;
 
-dbCatalogue = QSqlDatabase::addDatabase("QMYSQL");
+//dbCatalogue = QSqlDatabase::addDatabase("QMYSQL");
 
 
-dbCatalogue.setHostName("192.168.8.19");
-dbCatalogue.setDatabaseName("Catalogue");
-dbCatalogue.setUserName("root");
-dbCatalogue.setPassword("12345");
+//dbCatalogue.setHostName("192.168.8.19");
+//dbCatalogue.setDatabaseName("Catalogue");
+//dbCatalogue.setUserName("root");
+//dbCatalogue.setPassword("12345");
 

@@ -1,6 +1,7 @@
 #include "Utilisateur.h"
 #include <iostream>
 #include <string>
+#include <Artiste.h>
 
 using namespace std;
 

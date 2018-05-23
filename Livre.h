@@ -1,13 +1,13 @@
 #ifndef LIVRE_H
 #define LIVRE_H
-#include Media.h
+#include <Media.h>
 
 
 using namespace std;
 class Livre : public Media
 {
 public:
-    Livre(string auteur="", string editeur="", string nbrPages="");
+    Livre(string auteur="", string editeur="", int nbrPages=0);
     Livre(const Livre&);
     string getAuteur();
     string getEditeur();

@@ -27,18 +27,19 @@ SOURCES += \
         main.cpp \
         research.cpp \
     ../mediatheque/Media.cpp \
-    ../mediatheque1/Media.cpp \
+#    ../mediatheque1/Media.cpp \
     Media.cpp \
     Livre.cpp \
     CD.cpp \
     DVD.cpp \
     Artiste.cpp \
-    Utilisateur.cpp
+    Utilisateur.cpp \
+    connexion.cpp
 
 HEADERS += \
         research.h \
     ../mediatheque/Media.h \
-    ../mediatheque1/Media.h \
+#    ../mediatheque1/Media.h \
     Media.h \
     Livre.h \
     DVD.h \
