@@ -32,8 +32,8 @@ SOURCES += \
     Livre.cpp \
     CD.cpp \
     DVD.cpp \
-    utilisateur.cpp \
-    Artiste.cpp
+    Artiste.cpp \
+    Utilisateur.cpp
 
 HEADERS += \
         research.h \
@@ -43,8 +43,8 @@ HEADERS += \
     Livre.h \
     DVD.h \
     CD.h \
-    utilisateur.h \
-    artiste.h
+    Artiste.h \
+    Utilisateur.h
 QT += sql
 
 FORMS += \
