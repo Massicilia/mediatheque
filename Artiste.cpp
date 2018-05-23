@@ -62,5 +62,5 @@ void Artiste::setType(int _type){
     this->type=_type;
 }
 void Artiste::toString(){
-    cout << "ID: " << this->id << ", Nom: " << this->nom << ", Prenom: " << this->prenom << ", Nationnalit¨¦: " << this->nation << ", Date de Naissance: " << this->dateNaissance << ", status: " << this->status << ", Type: " << this->type << endl;
+    cout << "ID: " << this->id << ", Nom: " << this->nom << ", Prenom: " << this->prenom << ", Nationnalitï¿½ï¿½: " << this->nation << ", Date de Naissance: " << this->dateNaissance << ", status: " << this->status << ", Type: " << this->type << endl;
 }

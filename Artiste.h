@@ -1,5 +1,6 @@
-#ifndef ARTISTE_H_INCLUDED
-#define ARTISTE_H_INCLUDED
+#ifndef ARTISTE_H
+#define ARTISTE_H
+
 #include <string>
 
 using namespace std;
@@ -37,5 +38,4 @@ class Artiste{
         int type;
 };
 
-
-#endif // ARTISTE_H_INCLUDED
+#endif // ARTISTE_H

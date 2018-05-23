@@ -1,5 +1,5 @@
-#ifndef UTILISATEUR_H_INCLUDED
-#define UTILISATEUR_H_INCLUDED
+#ifndef UTILISATEUR_H
+#define UTILISATEUR_H
 
 #include <string>
 
@@ -38,5 +38,4 @@ class Utilisateur{
 
 };
 
-
-#endif // UTILISATEUR_H_INCLUDED
+#endif // UTILISATEUR_H
