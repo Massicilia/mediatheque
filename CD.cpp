@@ -4,27 +4,37 @@
 using namespace std;
 
 
+    CD::CD(){}
+    CD::CD(string _artistePrincipal, string _studio, int _nbrMin)
+    {
+        this->artistePrincipal=_artistePrincipal;
+        this->studio=_studio;
+        this->nbrMin=_nbrMin;
+    }
 
-//    CD::CD(string artistePrincipal, string studio, int nbrMin)
-//    {
-//        artistePrincipal=_artistePrincipal;
-//        studio=_studio;
-//        nbrMin=_nbrMin;
-//    }
-//    CD::CD(const CD&){}
 
+    string CD::getArtistePrincipal()
+    {
+        return this->artistePrincipal;
+    }
 
-//    string CD::getArtistePrincipal()
-//    {
-//        return _artistePrincipal;
-//    }
+    string CD::getStudio()
+    {
+        return this->studio;
+    }
 
-//    string CD::getStudio()
-//    {
-//        return _studio;
-//    }
+    int CD::getNbrMin()
+    {
+        return this->nbrMin;
+    }
 
-//    int CD::getNbrMin()
-//    {
-//        return _nbrMin;
-//    }
+    void CD::setArtistePrincipal(string _artistePrincipal){
+        this->artistePrincipal=_artistePrincipal;
+    }
+
+    void CD::setStudio(string _studio){
+        this->studio=_studio;
+    }
+    void CD::setNbrMin(int _nbrMin){
+        this->nbrMin=_nbrMin;
+    }
