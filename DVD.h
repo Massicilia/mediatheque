@@ -1,29 +1,28 @@
 #ifndef DVD_H
 #define DVD_H
-//#include <Media.h>
+#include <elementmedia.h>
 
 using namespace std;
-class DVD
-        //: public Media
+class DVD : public ElementMedia
 {
 public:
-     DVD(string realisateur="", string studio="", string casting[]= NULL, int nbrMin=0);
+     DVD(string _realisateur, string _studio, string _casting, int _nbrMin);
      DVD();
-     string getRealisateur();
-     string getStudio();
-     string getCasting();
-     int getNbrMin();
+     string getRealisateur(void);
+     string getStudio(void);
+     string getCasting(void);
+     int getNbrMin(void);
 
-     setRealisateur(string _realisateur);
-     setStudio(string _studio);
-     setCasting(string _casting);
-     setNbrMin(int _nbrMin);
+     void setRealisateur(string _realisateur);
+     void setStudio(string _studio);
+     void setCasting(string _casting);
+     void setNbrMin(int _nbrMin);
 protected:
 
-    string _realisateur;
-    string _studio;
-    string casting[];
-    int _nbrMin;
+    string realisateur;
+    string studio;
+    string casting;
+    int nbrMin;
 };
 
 #endif // DVD_H

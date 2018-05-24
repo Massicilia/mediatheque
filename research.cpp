@@ -36,3 +36,17 @@ void research::on_pushButton_selectUser_clicked()
     ui->textBrowser->setText("people(" + user.getNom() + ")  name:" + user.getPrenom() + "  age:" + user.getType());
     qDebug() <<"people("<<user.getNom()<<")  name:"<<user.getPrenom()<<"  age:"<<user.getType();
 }
+/*void research::on_pushButton_deleteUser_clicked()
+{
+    QString idUser = ui->DeleteTextEdit->text();
+    Utilisateur user = Utilisateur(idUser);
+    ui->textBrowser->setText("people(" + user.getNom() + ")  name:" + user.getPrenom() + "  age:" + user.getType());
+    qDebug() <<"people("<<user.getNom()<<")  name:"<<user.getPrenom()<<"  age:"<<user.getType();
+}
+void research::on_pushButton_modifyUser_clicked()
+{
+    QString idUser = ui->modifyTextEdit->text();
+    Utilisateur user = Utilisateur(idUser);
+    ui->textBrowser->setText("people(" + user.getNom() + ")  name:" + user.getPrenom() + "  age:" + user.getType());
+    qDebug() <<"people("<<user.getNom()<<")  name:"<<user.getPrenom()<<"  age:"<<user.getType();
+}*/

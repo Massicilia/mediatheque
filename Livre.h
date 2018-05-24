@@ -1,26 +1,25 @@
 #ifndef LIVRE_H
 #define LIVRE_H
-//#include <Media.h>
+#include <elementmedia.h>
 
 
 using namespace std;
-class Livre
-        //: public Media
+class Livre : public ElementMedia
 {
 public:
-    Livre(string auteur="", string editeur="", int nbrPages=0);
+    Livre(string _auteur, string _editeur, int _nbrPages);
     Livre();
-    string getAuteur();
-    string getEditeur();
-    int getNbrPages();
+    string getAuteur(void);
+    string getEditeur(void);
+    int getNbrPages(void);
 
-    setAuteur(string _auteur);
-    setEditeur(string _editeur);
-    setNbrPages(int _nbrPages);
+    void setAuteur(string _auteur);
+    void setEditeur(string _editeur);
+    void setNbrPages(int _nbrPages);
 protected:
 
-    string _auteur;
-    string _editeur;
-    int _nbrPages;
+    string auteur;
+    string editeur;
+    int nbrPages;
 };
 #endif // LIVRE_H

@@ -26,14 +26,14 @@ int Livre::getNbrPages()
 }
 
 
-void DVD::setAuteur(string _auteur){
+void Livre::setAuteur(string _auteur){
     this->auteur=_auteur;
 }
 
-void DVD::setEditeur(string _editeur){
+void Livre::setEditeur(string _editeur){
     this->editeur=_editeur;
 }
 
-void DVD::setNbrPages(int _nbrPages){
+void Livre::setNbrPages(int _nbrPages){
     this->nbrPages=_nbrPages;
 }

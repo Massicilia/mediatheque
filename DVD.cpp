@@ -5,14 +5,14 @@ using namespace std;
 
 
 
-    DVD::DVD(string _realisateur, string _studio, string _casting[], int _nbrMin)
+    DVD::DVD(string _realisateur, string _studio, string _casting, int _nbrMin)
     {
         this->realisateur=_realisateur;
         this->studio=_studio;
-        this->casting[]= _casting[];
+        this->casting= _casting;
         this->nbrMin=_nbrMin;
     }
-    DVD::DVD(const DVD&){}
+    DVD::DVD(){}
 
 
     string DVD::getRealisateur()
