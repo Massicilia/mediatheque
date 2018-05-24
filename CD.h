@@ -1,30 +1,30 @@
-//#ifndef dbCatalogue_H
-#ifndef CD_H
-#define CD_H
-//#include <Media.h>
+////#ifndef dbCatalogue_H
+//#ifndef CD_H
+//#define CD_H
+////#include <Media.h>
 
-using namespace std;
-class CD
-        //: public Media
-{
-public:
+//using namespace std;
+//class CD
+//        //: public Media
+//{
+//public:
 
-     CD(string artistePrincipal="", string studio="", int nbrMin=0);
-     CD();
-     string getArtistePrincipal();
-     string getStudio();
-     int getNbrMin();
+//     CD(string artistePrincipal="", string studio="", int nbrMin=0);
+//     CD();
+//     string getArtistePrincipal();
+//     string getStudio();
+//     int getNbrMin();
 
-     setArtistePrincipal(string _artistePrincipal);
-     setStudio(string _studio);
-     setNbrMin(int _nbrMin);
+//     setArtistePrincipal(string _artistePrincipal);
+//     setStudio(string _studio);
+//     setNbrMin(int _nbrMin);
 
 
-protected:
+//protected:
 
-    string _artistePrincipal;
-    string _studio;
-    int _nbrMin;
-};
+//    string _artistePrincipal;
+//    string _studio;
+//    int _nbrMin;
+//};
 
-#endif // CD_H
+//#endif // CD_H

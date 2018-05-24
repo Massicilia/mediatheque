@@ -28,6 +28,8 @@ class Utilisateur{
         void setDateNaissance(QString _dateNaissance);
         void setType(QString _type);
         void toString();
+        void addUser();
+        void deleteUser();
 
         private :
             QString id;

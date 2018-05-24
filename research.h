@@ -18,6 +18,10 @@ public:
 private slots:
     void on_pushButton_selectUser_clicked();
 
+    void on_pushButton_Add_clicked();
+
+    void on_pushButton_Delete_clicked();
+
 private:
     Ui::research *ui;
     QSqlDatabase dbMeteo;

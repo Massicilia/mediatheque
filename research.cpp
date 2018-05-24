@@ -33,6 +33,29 @@ void research::on_pushButton_selectUser_clicked()
 {
     QString idUser = ui->rechercheTextEdit->text();
     Utilisateur user = Utilisateur(idUser);
-    ui->textBrowser->setText("people(" + user.getNom() + ")  name:" + user.getPrenom() + "  age:" + user.getType());
-    qDebug() <<"people("<<user.getNom()<<")  name:"<<user.getPrenom()<<"  age:"<<user.getType();
+    ui->textBrowser->setText("Utilisateur( id: " + user.getID() + ", Nom: " + user.getNom() + ", Prénom:" + user.getPrenom() +
+                             ", Tel: " + user.getTel()+", Addresse: "+
+                             user.getAddr()+", date de naissance: " +
+                             user.getDateNaissance() + ", type: " +
+                             user.getType()+" )");
+}
+
+void research::on_pushButton_Add_clicked()
+{
+    Utilisateur user = Utilisateur();
+    user.setNom(ui->rechercheTextEdit_nom->text());
+    user.setPrenom(ui->rechercheTextEdit_prenom->text());
+    user.setTel(ui->rechercheTextEdit_tel->text());
+    user.setAddr(ui->rechercheTextEdit_addr->text());
+    user.setDateNaissance(ui->rechercheTextEdit_date->text());
+    user.setType(ui->rechercheTextEdit_type->text());
+
+    user.addUser();
+}
+
+void research::on_pushButton_Delete_clicked()
+{
+    Utilisateur user = Utilisateur();
+    user.setID(ui->rechercheTextEdit->text());
+    user.deleteUser();
 }

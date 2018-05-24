@@ -83,3 +83,30 @@ void Utilisateur::setType(QString _type){
 void Utilisateur::toString(){
     qDebug() << "ID: " << this->id << ", Nom: " << this->nom << ", Prenom: " << this->prenom << ", Tel: " << this->tel << ", Addresse: " << this->addr << ", Date de Naissance: " << this->dateNaissance << ", Type: " << this->type << endl;
 }
+void Utilisateur::addUser(){
+    QSqlQuery query;
+
+    query.prepare("insert into Utilisateur(nom, prenom, tel, addr, dateNaissance, type) values(:nom, :prenom, :tel, :addr, :date, :type)");
+
+    query.bindValue(":nom",this->nom);
+    query.bindValue(":prenom",this->prenom);
+    query.bindValue(":tel",this->tel);
+    query.bindValue(":addr",this->addr);
+    query.bindValue(":dateNaissance",this->dateNaissance);
+    query.bindValue(":type",this->type);
+
+    bool ok = query.exec();
+
+    if(!ok){
+        qDebug()<<"Insert failed/n";
+    }
+}
+
+void Utilisateur::deleteUser(){
+    QSqlQuery query;
+    bool ok = query.exec("delete from Utilisateur where idUser="+this->id);
+
+    if(!ok){
+        qDebug()<<"Delete failed/n";
+    }
+}
