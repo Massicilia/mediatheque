@@ -5,6 +5,7 @@
 
 
 
+<<<<<<< HEAD
 //    DVD::DVD(string _realisateur, string _studio, string _casting[], int _nbrMin)
 //    {
 //        this->realisateur=_realisateur;
@@ -13,6 +14,16 @@
 //        this->nbrMin=_nbrMin;
 //    }
 //    DVD::DVD(const DVD&){}
+=======
+    DVD::DVD(string _realisateur, string _studio, string _casting, int _nbrMin)
+    {
+        this->realisateur=_realisateur;
+        this->studio=_studio;
+        this->casting= _casting;
+        this->nbrMin=_nbrMin;
+    }
+    DVD::DVD(){}
+>>>>>>> 6dbe5370599c47ecd026acc17ecb3bfa51009012
 
 
 //    string DVD::getRealisateur()

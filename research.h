@@ -17,6 +17,8 @@ public:
 
 private slots:
     void on_pushButton_selectUser_clicked();
+    void on_pushButton_deleteUser_clicked();
+    void on_pushButton_modifyUser_clicked();
 
     void on_pushButton_Add_clicked();
 

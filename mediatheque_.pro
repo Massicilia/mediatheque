@@ -33,8 +33,7 @@ SOURCES += \
     Artiste.cpp \
     Utilisateur.cpp \
     connexion.cpp \
-    main.cpp \
-    media.cpp
+    elementmedia.cpp
 
 HEADERS += \
         research.h \
@@ -45,7 +44,7 @@ HEADERS += \
     CD.h \
     Artiste.h \
     Utilisateur.h \
-    media.h
+    elementmedia.h
 QT += sql
 
 FORMS += \
