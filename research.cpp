@@ -35,13 +35,4 @@ void research::on_pushButton_selectUser_clicked()
     Utilisateur user = Utilisateur(idUser);
     ui->textBrowser->setText("people(" + user.getNom() + ")  name:" + user.getPrenom() + "  age:" + user.getType());
     qDebug() <<"people("<<user.getNom()<<")  name:"<<user.getPrenom()<<"  age:"<<user.getType();
-//    QSqlQuery query;
-//    bool ok = query.exec("select * from Utilisateur");
-//    if(!ok){
-//        qDebug()<<"Select failed/n";
-//    }
-//    while (query.next())
-//    {
-//        qDebug()<<"people("<<query.value(0).toInt()<<")  name:"<<query.value(1).toString()<<"  age:"<<query.value(2).toInt();
-//    }
 }
