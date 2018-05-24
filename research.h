@@ -15,6 +15,9 @@ public:
     explicit research(QWidget *parent = 0);
     ~research();
 
+private slots:
+    void on_pushButton_selectUser_clicked();
+
 private:
     Ui::research *ui;
     QSqlDatabase dbMeteo;
